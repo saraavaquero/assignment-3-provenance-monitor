@@ -1,0 +1,61 @@
+{
+  "@context": "http://www.w3.org/ns/prov#",
+  "@id": "urn:uuid:9610a6ca-1e50-4855-ab40-a1eda2ceda68",
+  "@type": "Activity",
+  "label": "Processament complet de 3D_114_S14",
+  "startTime": "2026-03-31T14:41:00Z",
+  "endTime": "2026-03-31T14:53:27Z",
+  "executionNode": "lugia",
+  "sourceDirectory": "/data/input/",
+  "destinationDirectory": "/data/output/3D_114_S14",
+  "wasAssociatedWith": [
+    {
+      "@type": "SoftwareAgent",
+      "label": "seqfu",
+      "version": "1.22.3"
+    },
+    {
+      "@type": "SoftwareAgent",
+      "label": "sha256sum",
+      "version": "sha256sum (GNU coreutils) 8.32"
+    },
+    {
+      "@type": "SoftwareAgent",
+      "label": "Pipeline Nextflow fastq_prov",
+      "repository": "local",
+      "commitId": "N/A",
+      "revision": "N/A"
+    },
+    {
+      "@id": "urn:person:bioinfo_user",
+      "@type": "Person",
+      "label": "Usuari executor: bioinfo_user",
+      "actedOnBehalfOf": {
+        "@id": "https://ror.org/01y990p52",
+        "@type": "Organization",
+        "label": "La Salle"
+      }
+    }
+  ],
+  "generated": [
+    {
+      "@type": "Entity",
+      "label": "Verificació SHA256",
+      "description": "Resultat de la comprovació de checksum a destí",
+      "value": "3D_114_S14_R1_001.fastq.gz: La suma coincide"
+    },
+    {
+      "@type": "Entity",
+      "label": "Verificació Seqfu",
+      "description": "Resultat de la comprovació d'integritat del format FASTQ",
+      "value": "ERROR FASTQ integrity check failed 3D_114_S14_R1_001.fastq.gz"
+    },
+    {
+      "@type": "Entity",
+      "label": "FASTQ Files",
+      "totalSizeBytes": "4622078283",
+      "category": "Clinical",
+      "fileCount": "2"
+    }
+  ]
+}

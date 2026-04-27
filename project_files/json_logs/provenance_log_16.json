@@ -1,0 +1,61 @@
+{
+  "@context": "http://www.w3.org/ns/prov#",
+  "@id": "urn:uuid:fc4e244e-7735-47ae-a8a0-62021b848935",
+  "@type": "Activity",
+  "label": "Processament complet de 3D_116_S16",
+  "startTime": "2026-03-31T11:05:00Z",
+  "endTime": "2026-03-31T11:08:19Z",
+  "executionNode": "darkrai",
+  "sourceDirectory": "/data/input/",
+  "destinationDirectory": "/data/output/3D_116_S16",
+  "wasAssociatedWith": [
+    {
+      "@type": "SoftwareAgent",
+      "label": "seqfu",
+      "version": "1.22.3"
+    },
+    {
+      "@type": "SoftwareAgent",
+      "label": "sha256sum",
+      "version": "sha256sum (GNU coreutils) 8.32"
+    },
+    {
+      "@type": "SoftwareAgent",
+      "label": "Pipeline Nextflow fastq_prov",
+      "repository": "local",
+      "commitId": "N/A",
+      "revision": "N/A"
+    },
+    {
+      "@id": "urn:person:salle_alumni",
+      "@type": "Person",
+      "label": "Usuari executor: bioinfo_user",
+      "actedOnBehalfOf": {
+        "@id": "https://ror.org/01y990p52",
+        "@type": "Organization",
+        "label": "La Salle"
+      }
+    }
+  ],
+  "generated": [
+    {
+      "@type": "Entity",
+      "label": "Verificació SHA256",
+      "description": "Resultat de la comprovació de checksum a destí",
+      "value": "3D_116_S16_R1_001.fastq.gz: ERROR checksum mismatch"
+    },
+    {
+      "@type": "Entity",
+      "label": "Verificació Seqfu",
+      "description": "Resultat de la comprovació d'integritat del format FASTQ",
+      "value": "OK PE 3D_116_S16_R1_001.fastq.gz"
+    },
+    {
+      "@type": "Entity",
+      "label": "FASTQ Files",
+      "totalSizeBytes": "891637381",
+      "category": "Research",
+      "fileCount": "2"
+    }
+  ]
+}
